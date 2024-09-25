@@ -19,9 +19,9 @@
 
   /* typography  */
   --white: #120056;
-  --dark-grey: #8c8c8c;
-  --grey: #757575;
-  --light-grey: #999999;
+  --dark-gray: #8c8c8c;
+  --gray: #757575;
+  --light-gray: #999999;
 
   /* accent */
   --accent-blue: #0071eb;
@@ -32,6 +32,8 @@
   --bg-black: #000000;
   --bg-gray: #222222;
   --bg-light-gray: #303030;
+
+  --border-radius: 0.5rem;
 }
 /*
 
@@ -59,14 +61,32 @@ button,
 .primary-button {
   font-size: 1.8rem;
   letter-spacing: 0.1%;
+  background-color: white;
+  color: var(--primary-black);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 2rem;
 }
+
 .secondary-button {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   letter-spacing: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.outline-button {
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  background-color: transparent;
+  border-radius: none;
 }
 
 body {
   font-size: 1.6rem;
+  background-color: var(--bg-black);
 }
 .text-field {
   font-size: 1rem;
