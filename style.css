@@ -1,3 +1,7 @@
+* {
+  /* border: 1px solid lime; */
+}
+
 :root {
   font-family: "Signika", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -18,7 +22,7 @@
   --primary-black: #000000;
 
   /* typography  */
-  --white: #120056;
+  --white: #ffffff;
   --dark-gray: #8c8c8c;
   --gray: #757575;
   --light-gray: #999999;
@@ -87,6 +91,7 @@ button,
 body {
   font-size: 1.6rem;
   background-color: var(--bg-black);
+  color: var(--white);
 }
 .text-field {
   font-size: 1rem;
@@ -98,4 +103,31 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.5%;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-center {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.profile-large img {
+  width: 12rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profiles {
+  display: flex;
+  gap: 2rem;
+  color: var(--gray);
+  text-align: center;
 }
