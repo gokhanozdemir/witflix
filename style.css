@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Signika", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -32,4 +32,50 @@
   --bg-black: #000000;
   --bg-gray: #222222;
   --bg-light-gray: #303030;
+}
+/*
+
+--------
+TYPOGRAPHY BASE 
+--------*/
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: -0.5%;
+}
+h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -1%;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+button,
+.primary-button {
+  font-size: 1.8rem;
+  letter-spacing: 0.1%;
+}
+.secondary-button {
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+.text-field {
+  font-size: 1rem;
+}
+.lead {
+  font-size: 1rem;
+}
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5%;
 }
