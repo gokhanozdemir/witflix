@@ -3,15 +3,33 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+ */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  --primary-red: #e50914;
   --primary-black: #000000;
+
+  /* typography  */
+  --white: #120056;
+  --dark-grey: #8c8c8c;
+  --grey: #757575;
+  --light-grey: #999999;
+
+  /* accent */
+  --accent-blue: #0071eb;
+  --accent-orange: #ffa00a;
+  --accent-green: #5fa53f;
+
+  /* background */
+  --bg-black: #000000;
+  --bg-gray: #222222;
+  --bg-light-gray: #303030;
 }
