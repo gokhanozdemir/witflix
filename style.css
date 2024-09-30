@@ -167,6 +167,52 @@ main {
   padding-left: var(--padding-left);
 }
 
+.hero-box {
+  max-width: 800px;
+}
+
+.card-container {
+  display: flex;
+  overflow-y: scroll;
+  gap: var(--gap-m);
+}
+
+.card {
+  background-color: var(--bg-gray);
+  height: 16rem;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-logo {
+  background-image: url("./MovieBlock/icon-netflix.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0.5rem;
+}
+
+.card-top10 {
+  background-image: url("./MovieBlock/icon-top10.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 2.5rem;
+}
+
+.card .subtitle {
+  background-color: var(--primary-red);
+  color: white;
+  align-self: center;
+  padding: 0.25rem 0.5rem;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
 /*-----------------
 - UTILITY CLASSES 
 ------------*/
