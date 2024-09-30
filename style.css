@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid lime; */
+  border: 1px solid lime;
 }
 
 :root {
@@ -38,12 +38,18 @@
   --bg-light-gray: #303030;
 
   --border-radius: 0.5rem;
+
+  --gap-s: 0.75rem;
+  --gap-m: 1.5rem;
+  --gap-l: 4rem;
+
+  --padding-left: 3rem;
 }
 /*
-
 --------
 TYPOGRAPHY BASE 
 --------*/
+
 h1 {
   font-weight: bold;
   font-size: 4rem;
@@ -112,12 +118,19 @@ body {
   align-items: center;
 }
 
+.page-container {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .container-center {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   align-items: center;
 }
+
+/* WHO IS WATHCING */
 
 .profile-large img {
   width: 12rem;
@@ -130,4 +143,59 @@ body {
   gap: 2rem;
   color: var(--gray);
   text-align: center;
+}
+
+/* ----------------
+HEADER
+-----------
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding-left: var(--padding-left);
+}
+
+main {
+  padding-left: var(--padding-left);
+}
+
+.hero-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: var(--padding-left);
+}
+
+/*-----------------
+- UTILITY CLASSES 
+------------*/
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.gap-s {
+  gap: var(--gap-s);
+}
+
+.gap-m {
+  gap: var(--gap-m);
+}
+
+.gap-l {
+  gap: var(--gap-l);
 }
