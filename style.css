@@ -1,7 +1,7 @@
-* {
+/* * {
   border: 1px solid lime;
 }
-
+ */
 :root {
   font-family: "Signika", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -188,6 +188,10 @@ main {
   padding-left: var(--padding-left);
 }
 
+section + section {
+  margin-top: var(--gap-l);
+}
+
 .hero-section {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -202,10 +206,17 @@ main {
   overflow-y: scroll;
 }
 
+h3 + .card-container {
+  margin-top: var(--gap-m);
+}
+
 .card {
   background-color: var(--bg-gray);
   height: 16rem;
   aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-logo {
