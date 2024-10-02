@@ -150,11 +150,19 @@ body {
 }
 
 /* WHO IS WATHCING */
+.profile-large {
+}
+
+.profile-large:last-of-type img {
+  padding: 2.5rem;
+  box-shadow: none !important;
+}
 
 .profile-large img {
   width: 12rem;
   text-align: center;
   margin-bottom: 1rem;
+  box-shadow: inset 0px -16px 35px 5px rgba(255, 255, 255, 0.2);
 }
 
 .profiles {
