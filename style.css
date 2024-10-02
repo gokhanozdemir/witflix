@@ -67,6 +67,14 @@ h3 {
   font-size: 1.6rem;
 }
 
+a {
+  color: var(--gray);
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: var(--white);
+}
+
 button,
 .primary-button {
   font-size: 1.8rem;
@@ -78,6 +86,7 @@ button,
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 2rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .secondary-button {
@@ -92,6 +101,16 @@ button,
   color: var(--gray);
   background-color: transparent;
   border-radius: none;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.8;
+}
+
+.outline-button:hover {
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 
 body {
